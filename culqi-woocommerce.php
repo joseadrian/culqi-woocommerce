@@ -471,8 +471,7 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
                                     } else {
 										if (result.object === "charge") {
 	                                        $('#notify').empty();
-	                                        $("#info_payment").remove();
-	                                        $('div.woocommerce').append("<h1 style='text-align: center;'>Pago Exitoso</h1>" +
+	                                        $("#info_payment").html("<h1>Pago Exitoso</h1>" +
 	                                        "<p style='color:#46e6aa; font-weight:bold'>Pago realizado exitosamente</p>" +
 	                                        "<br><button id='home'>Seguir comprando</button>");
 	                                        // Procesar Venta en WooCommerce
